@@ -23,4 +23,4 @@ jobs:
         dd: date
       run: echo "print ${{ env.dd }}" 
     - name: env-3
-      run: echo "print $JAAA"
+      run: echo "${{ vars.JAAA }}"
