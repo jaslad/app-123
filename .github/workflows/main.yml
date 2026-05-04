@@ -18,7 +18,9 @@ jobs:
       run: echo "print ${{ env.name }}"
     - name: print the working-directory
       run: pwd && date && whoami
-    - name: env-1
+    - name: env-2
       env:
         dd: date
       run: echo "print ${{ env.dd }}" 
+    - name: env-3
+      run: echo "print $JAAA"
